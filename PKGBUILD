@@ -23,7 +23,8 @@ ros_depends=(ros-noetic-srdfdom
   ros-noetic-moveit-ros-planning
   ros-noetic-moveit-ros-visualization)
 depends=(${ros_depends[@]}
-  yaml-cpp)
+  yaml-cpp
+  log4cxx)
 
 _dir="moveit-${pkgver}/moveit_setup_assistant"
 source=("${pkgname}-${pkgver}.tar.gz"::"https://github.com/ros-planning/moveit/archive/${pkgver}.tar.gz")
